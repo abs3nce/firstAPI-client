@@ -1,9 +1,7 @@
 <template>
     <div class="container">
         <Navbar />
-        <main>
-            <Form />
-        </main>
+        <router-view></router-view>
     </div>
 </template>
 
@@ -15,14 +13,18 @@ import VueAxios from "vue-axios";
 Vue.use(VueAxios, axios);
 
 //import pages
-import Form from "./components/Form";
 import Navbar from "./components/Navbar.vue";
+// import AddPostsPage from "./components/AddPostsPage";
+// import GetPostsPage from "./components/GetPostsPage";
+// import DeletePostsPage from "./components/DeletePostsPage";
 
 export default {
     name: "App",
     components: {
-        Form,
         Navbar,
+        // AddPostsPage,
+        // GetPostsPage,
+        // DeletePostsPage,
     },
 };
 </script>

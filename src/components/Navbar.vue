@@ -2,22 +2,22 @@
     <nav class="navbar">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <router-link to="/get" class="nav-link">
                     <i class="fas fa-list"></i>
                     <span class="link-text">GET</span>
-                </a>
+                </router-link>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <router-link to="/post" class="nav-link">
                     <i class="fab fa-telegram-plane"></i>
                     <span class="link-text">POST</span>
-                </a>
+                </router-link>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <router-link to="/delete" class="nav-link">
                     <i class="fas fa-times-circle"></i>
                     <span class="link-text">DELETE</span>
-                </a>
+                </router-link>
             </li>
         </ul>
     </nav>

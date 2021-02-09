@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <h1>Post to DB</h1>
-        
+
         <div class="post-to-db">
             <form @submit="postData" method="post">
                 <input
@@ -41,10 +41,10 @@ export default {
         };
     },
     methods: {
-        postData(e){
+        postData(e) {
             this.axios.post("http://localhost:3000/api/posts", this.posts);
             e.preventDefault();
-        }
+        },
     },
 };
 </script>
